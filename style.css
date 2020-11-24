@@ -13,7 +13,12 @@ p {
 }
 form {
     text-align: center;
-    
+}
+.inputform {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: large;
 }
 img.center {
     display: block;
