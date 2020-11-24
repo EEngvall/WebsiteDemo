@@ -1,18 +1,35 @@
-@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Raleway:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Sacramento&display=swap');
 body {
     background-color: burlywood;
 }
-h1 {
-    color: orange;
-}
-p {
-    font-family: sans-serif;
+.text-container {
+    font-family: 'Sacramento', cursive, sans-serif;
     color: black;
-    font: 18x;
+    font-size: xx-large;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.photo-container {
+    width: 100%;
 }
 form {
     text-align: center;
+}
+.set-width {
+    width: 25em;
+}
+.set-size {
+    height: auto;
+    width: auto;
+    font-size: 20px;
+}
+input[type=text] {
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border-width: 100%;
 }
 .inputform {
     display: flex;
@@ -24,5 +41,6 @@ img.center {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    border-radius: 1em;
     }
    

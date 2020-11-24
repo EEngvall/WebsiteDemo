@@ -1,26 +1,31 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <script type="text/javascript">
+        function signupJS() {
+            var jFirst = document.getElementById("fname").value;
+            var jLast = document.getElementById("lname").value;
+            var jEmail = document.getElementById("email").value;
+            alert("Thank you for joining our mailing list!\n " + jEmail + " added to list!")
+        }
+        </script>
         <meta charset="utf-8">
         <title>My Test Page</title>
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <div>
+        <div class="photo-container">
         <img class="center" src="images/MediumSquareLogo.jpg"  width="300" height="300" alt= "My next test image">
         <div> 
-        <p> Welcome to ModRoots!  Have a look around!</p>
-
-        <p> Enter your information to join our mailing list!</p>
-        <form>
+        <p class="text-container"> Welcome to ModRoots.<br>  
+            Have a look around. <br>
+            Enter your information to join our mailing list!</p>
+        <form name="signup" onsubmit="JavaScript:signupJS()">
             <div class="inputform">
-                <label for="fname"> First Name:</label>
-                <input type="text" id="fname" name="fname"><br>
-                <label for="lname"> Last Name:</label>
-                <input type="text" id="lname" name="lname"><br>
-                <label for="email"> Email:</label>
-                <input type="text" id="email" name="email"><br>
-                <input type="submit" value="Submit">
+                <input type="text" id="fname" name="fname" placeholder="First Name" class="set-width"><br>
+                <input type="text" id="lname" name="lname" placeholder="Last Name" class="set-width"><br>
+                <input type="text" id="email" name="email" required placeholder="Email" class="set-width"><br>
+                <input type="submit" value="Register!" class="set-size">
             </div>
         </form>
     </body>
